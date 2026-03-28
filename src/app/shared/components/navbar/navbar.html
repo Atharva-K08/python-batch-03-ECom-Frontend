@@ -1,0 +1,176 @@
+<nav class="navbar navbar-expand-lg p-2" style="background-color: #131921; height: 68px">
+  <div class="container-fluid">
+    <a class="navbar-brand mynav-tools text-white" href="#">
+      <img src="/images/logo.png" height="30" alt="" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav w-100">
+        <li class="nav-item">
+          <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="mynav-tools nav-link active text-white" aria-current="page" href="#">
+              <div class="ps-3 ms-1" style="color: gainsboro; font-size: 12px">Deliver To</div>
+              <div class="fw-bold"><i class="ri-map-pin-line"></i> India</div>
+            </div>
+          </div>
+        </li>
+        <div class="d-flex align-items-center w-75">
+          <form class="d-flex w-100 mx-3" role="search">
+            <div class="input-group">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle bg-secondary-subtle rounded-start-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  All
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search Amazon"
+                aria-label="Search"
+              />
+              <button class="btn btn-warning" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+        <li class="nav-item dropdown pt-3 mynav-tools">
+          <a
+            class="nav-link dropdown-toggle text-white"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            EN
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="text-white d-flex p-2 gap-3" style="background-color: #232f3e">
+  <div>
+    <div
+      class=""
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample"
+    >
+      <i class="ri-menu-line"></i>
+    </div>
+  </div>
+  <div>All</div>
+  <div>Amazon Bazaar</div>
+  <div>Today's Deals</div>
+  <div>Gift Cards</div>
+  <div>Sell</div>
+  <div>Registry</div>
+  <div>Prime Video</div>
+  <div>Customer Service</div>
+</div>
+<!-- /-------------------------Modals---------------------- -->
+<div
+  class="modal fade"
+  style="top: 180px"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-body-secondary px-4">
+        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Choose your location</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Delivery options and delivery speeds may vary for different locations</p>
+        <div>
+          <button class="btn btn-warning rounded-5 w-100">Sign in to see your addresses</button>
+        </div>
+        <div class="d-flex align-items-center justify-content-center gap-2 my-3">
+          <div class="border border-secondary border-1" style="width: 120px; height: 0px"></div>
+          <div>or enter a US zip code</div>
+          <div class="border border-secondary border-1" style="width: 120px; height: 0px"></div>
+        </div>
+        <div>
+          <form class="d-flex justify-content-between gap-3">
+            <input type="text" class="form-control border-black" />
+            <button class="btn btn-outline-dark rounded-5">Apply</button>
+          </form>
+        </div>
+        <div class="d-flex align-items-center justify-content-center gap-2 my-3">
+          <div class="border border-secondary border-1" style="width: 120px; height: 0px"></div>
+          <div>or ship outside the US</div>
+          <div class="border border-secondary border-1" style="width: 120px; height: 0px"></div>
+        </div>
+        <div>
+          <form>
+            <select name="" id="" class="form-control border-black">
+              <option value="#">Choose</option>
+              <option value="india">India</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning rounded-5">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------------Offcanvas------------------- -->
+<div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel"
+>
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text,
+      images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
