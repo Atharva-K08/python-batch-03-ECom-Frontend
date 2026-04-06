@@ -7,13 +7,14 @@ import { ProductDetail } from './features/product/product-detail/product-detail'
 import { Cart } from './core/services/cart';
 import { Checkout } from './features/order/checkout/checkout';
 import { AuthGuard } from './core/guards/auth-guard';
+import { ProductHome } from './features/product/product-home/product-home';
 
 export const routes: Routes = [
 
   // ===================== DEFAULT =====================
   {
     path: '',
-    redirectTo: 'products',
+    redirectTo: '',
     pathMatch: 'full'
   },
 
@@ -35,6 +36,10 @@ export const routes: Routes = [
   {
     path: 'products/:id',
     component: ProductDetail
+  },
+  {
+    path: '',
+    component: ProductHome
   },
 
   // ===================== CART =====================

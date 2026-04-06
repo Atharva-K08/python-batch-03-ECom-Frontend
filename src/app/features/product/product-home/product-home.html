@@ -47,11 +47,36 @@
   <div class="position-absolute p-5 w-100 blur-banner"></div>
   <div class="position-absolute product-catlog w-100">
     <div class="row">
-      @for (item of items; track $index) {
-        <div class="col">
-          <div class="card">
-            product
-          </div>
+      @for (sub of subCategories; track $index) {
+        <div class="col-3">
+          <a routerLink="products" class="card shadow">
+            <div class="card-body">
+              <div class="card-header">
+                @for (cat of catagories; track $index) {
+                  @if (cat.id == sub.category) {
+                    <h5 class="card-title">{{ cat.title }}</h5>
+                  }
+                }
+              </div>
+
+              <div class="row">
+                @for (img of sub.images; track $index) {
+                  <div class="col-6">
+                    <img
+                      src="{{ img.image }}"
+                      class="card-img-top mt-3"
+                      alt="..."
+                      style="height: 120px; object-fit: contain"
+                    />
+                    <p class="mt-2 text-center">{{ img.title }}</p>
+                  </div>
+                }
+              </div>
+            </div>
+            <div class="p-3 mx-3 px-4 text-end">
+              {{ sub.title }}
+            </div>
+          </a>
         </div>
       }
     </div>

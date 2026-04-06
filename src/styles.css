@@ -2,3 +2,13 @@
 .mynav-tools:hover {
     outline: 1px solid white;
 }
+.blur-banner {
+    top: 40vh; 
+    height: 50vh;
+    background:linear-gradient(transparent, rgb(211, 242, 255), white);
+}
+.product-catlog {
+    padding: 20px;
+    top: 35vh;
+    min-height: 100vh;
+}
